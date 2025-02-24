@@ -14,7 +14,7 @@ def get_weather_data(lat, lon, start_date, end_date, max_retries=5):
         "timezone": "Europe/Madrid"
     }
     
-    delay = 5  # segundos iniciales de espera en caso de error 429
+    delay = 2  # segundos iniciales de espera en caso de error 429
     for attempt in range(max_retries):
         response = requests.get(base_url, params=params)
         if response.status_code == 429:
@@ -35,41 +35,48 @@ end_date_total = datetime.date.today().strftime("%Y-%m-%d")
 
 # Diccionario de provincias (capitales) con coordenadas redondeadas a 4 decimales
 provincias = {
-    "A Coruña": {"lat": 43.3701, "lon": -8.3911},
-    "Albacete": {"lat": 38.9959, "lon": -1.8557},
-    "Alicante": {"lat": 38.3455, "lon": -0.4832},
-    "Almería": {"lat": 36.8389, "lon": -2.4641},
-    "Ávila": {"lat": 40.6559, "lon": -4.6977},
-    "Badajoz": {"lat": 38.8787, "lon": -6.9710},
-    "Barcelona": {"lat": 41.3842, "lon": 2.1763},
-    "Vizcaya": {"lat": 43.2572, "lon": -2.9239},
-    "Burgos": {"lat": 42.3411, "lon": -3.7042},
-    "Cáceres": {"lat": 39.4732, "lon": -6.3712},
-    "Cádiz": {"lat": 36.5217, "lon": -6.2841},
-    "Castellón": {"lat": 39.9864, "lon": -0.0369},
+    # "A Coruña": {"lat": 43.3701, "lon": -8.3911},
+    # "Albacete": {"lat": 38.9959, "lon": -1.8557},
+    # "Alicante": {"lat": 38.3455, "lon": -0.4832},
+    # "Almería": {"lat": 36.8389, "lon": -2.4641},
+    # "Ávila": {"lat": 40.6559, "lon": -4.6977},
+    # "Badajoz": {"lat": 38.8787, "lon": -6.9710},
+    # "Barcelona": {"lat": 41.3842, "lon": 2.1763},
+    # "Vizcaya": {"lat": 43.2572, "lon": -2.9239},
+    # "Burgos": {"lat": 42.3411, "lon": -3.7042},
+    # "Cáceres": {"lat": 39.4732, "lon": -6.3712},
+    # "Cádiz": {"lat": 36.5217, "lon": -6.2841},
+    # "Castellón": {"lat": 39.9864, "lon": -0.0369},
+
     "Ceuta": {"lat": 35.8881, "lon": -5.3068},
-    "Ciudad Real": {"lat": 38.9865, "lon": -3.9313},
-    "Córdoba": {"lat": 37.8795, "lon": -4.7803},
+
+    # "Ciudad Real": {"lat": 38.9865, "lon": -3.9313},
+    # "Córdoba": {"lat": 37.8795, "lon": -4.7803},
+
     "Cuenca": {"lat": 40.0765, "lon": -2.1315},
-    "Girona": {"lat": 41.9819, "lon": 2.8241},
-    "Granada": {"lat": 37.1764, "lon": -3.6000},
+
+    # "Girona": {"lat": 41.9819, "lon": 2.8241},
+    # "Granada": {"lat": 37.1764, "lon": -3.6000},
+
     "Guadalajara": {"lat": 40.6344, "lon": -3.1621},
-    "Huelva": {"lat": 37.2600, "lon": -6.9504},
-    "Huesca": {"lat": 42.1406, "lon": -0.4084},
-    "Jaén": {"lat": 37.7652, "lon": -3.7904},
-    "Las Palmas": {"lat": 28.0994, "lon": -15.4134},
-    "León": {"lat": 42.5991, "lon": -5.5671},
-    "Lleida": {"lat": 41.6153, "lon": 0.6206},
-    "La Rioja": {"lat": 42.4664, "lon": -2.4457},
-    "Lugo": {"lat": 43.0091, "lon": -7.5582},
-    "Madrid": {"lat": 40.4165, "lon": -3.7026},
-    "Málaga": {"lat": 36.7203, "lon": -4.4200},
-    "Melilla": {"lat": 35.2947, "lon": -2.9423},
-    "Murcia": {"lat": 37.9844, "lon": -1.1285},
-    "Ourense": {"lat": 42.3365, "lon": -7.8637},
-    "Asturias": {"lat": 43.3623, "lon": -5.8437},
-    "Palencia": {"lat": 42.0078, "lon": -4.5346},
-    "Baleares": {"lat": 39.5711, "lon": 2.6518},
+
+    # "Huelva": {"lat": 37.2600, "lon": -6.9504},
+    # "Huesca": {"lat": 42.1406, "lon": -0.4084},
+    # "Jaén": {"lat": 37.7652, "lon": -3.7904},
+    # "Las Palmas": {"lat": 28.0994, "lon": -15.4134},
+    # "León": {"lat": 42.5991, "lon": -5.5671},
+    # "Lleida": {"lat": 41.6153, "lon": 0.6206},
+    # "La Rioja": {"lat": 42.4664, "lon": -2.4457},
+    # "Lugo": {"lat": 43.0091, "lon": -7.5582},
+    # "Madrid": {"lat": 40.4165, "lon": -3.7026},
+    # "Málaga": {"lat": 36.7203, "lon": -4.4200},
+    # "Melilla": {"lat": 35.2947, "lon": -2.9423},
+    # "Murcia": {"lat": 37.9844, "lon": -1.1285},
+    # "Ourense": {"lat": 42.3365, "lon": -7.8637},
+    # "Asturias": {"lat": 43.3623, "lon": -5.8437},
+    # "Palencia": {"lat": 42.0078, "lon": -4.5346},
+    # "Baleares": {"lat": 39.5711, "lon": 2.6518},
+
     "Navarra": {"lat": 42.8141, "lon": -1.6452},
     "Pontevedra": {"lat": 42.4338, "lon": -8.6480},
     "Salamanca": {"lat": 40.9674, "lon": -5.6654},
@@ -97,7 +104,7 @@ for provincia, coords in provincias.items():
         df_provincia = get_weather_data(coords["lat"], coords["lon"], start_date_total, end_date_total)
         df_provincia["provincia"] = provincia
         lista_df.append(df_provincia)
-        time.sleep(1)  # Retardo para evitar saturar la API
+        time.sleep(1)
     except Exception as e:
         print(f"Error al consultar {provincia}: {e}")
 
