@@ -47,19 +47,13 @@ provincias = {
     # "Cáceres": {"lat": 39.4732, "lon": -6.3712},
     # "Cádiz": {"lat": 36.5217, "lon": -6.2841},
     # "Castellón": {"lat": 39.9864, "lon": -0.0369},
-
-    "Ceuta": {"lat": 35.8881, "lon": -5.3068},
-
+    # "Ceuta": {"lat": 35.8881, "lon": -5.3068},
     # "Ciudad Real": {"lat": 38.9865, "lon": -3.9313},
     # "Córdoba": {"lat": 37.8795, "lon": -4.7803},
-
-    "Cuenca": {"lat": 40.0765, "lon": -2.1315},
-
+    # "Cuenca": {"lat": 40.0765, "lon": -2.1315},
     # "Girona": {"lat": 41.9819, "lon": 2.8241},
     # "Granada": {"lat": 37.1764, "lon": -3.6000},
-
-    "Guadalajara": {"lat": 40.6344, "lon": -3.1621},
-
+    # "Guadalajara": {"lat": 40.6344, "lon": -3.1621},
     # "Huelva": {"lat": 37.2600, "lon": -6.9504},
     # "Huesca": {"lat": 42.1406, "lon": -0.4084},
     # "Jaén": {"lat": 37.7652, "lon": -3.7904},
@@ -76,24 +70,23 @@ provincias = {
     # "Asturias": {"lat": 43.3623, "lon": -5.8437},
     # "Palencia": {"lat": 42.0078, "lon": -4.5346},
     # "Baleares": {"lat": 39.5711, "lon": 2.6518},
-
-    "Navarra": {"lat": 42.8141, "lon": -1.6452},
-    "Pontevedra": {"lat": 42.4338, "lon": -8.6480},
-    "Salamanca": {"lat": 40.9674, "lon": -5.6654},
-    "Gipuzkoa": {"lat": 43.3172, "lon": -1.9819},
-    "Santa Cruz de Tenerife": {"lat": 28.4629, "lon": -16.2472},
+    # "Navarra": {"lat": 42.8141, "lon": -1.6452},
+    # "Pontevedra": {"lat": 42.4338, "lon": -8.6480},
+    # "Salamanca": {"lat": 40.9674, "lon": -5.6654},
+    # "Gipuzkoa": {"lat": 43.3172, "lon": -1.9819},
+    # "Santa Cruz de Tenerife": {"lat": 28.4629, "lon": -16.2472},
     "Cantabria": {"lat": 43.4630, "lon": -3.8047},
-    "Segovia": {"lat": 40.9499, "lon": -4.1252},
-    "Sevilla": {"lat": 37.3862, "lon": -5.9925},
-    "Soria": {"lat": 41.7633, "lon": -2.4662},
-    "Tarragona": {"lat": 41.1191, "lon": 1.2584},
+    # "Segovia": {"lat": 40.9499, "lon": -4.1252},
+    # "Sevilla": {"lat": 37.3862, "lon": -5.9925},
+    # "Soria": {"lat": 41.7633, "lon": -2.4662},
+    # "Tarragona": {"lat": 41.1191, "lon": 1.2584},
     "Teruel": {"lat": 40.3441, "lon": -1.1093},
-    "Toledo": {"lat": 39.8572, "lon": -4.0243},
-    "Valencia": {"lat": 39.4753, "lon": -0.3757},
-    "Valladolid": {"lat": 41.6523, "lon": -4.7233},
-    "Álava": {"lat": 42.8506, "lon": -2.6728},
+    # "Toledo": {"lat": 39.8572, "lon": -4.0243},
+    # "Valencia": {"lat": 39.4753, "lon": -0.3757},
+    # "Valladolid": {"lat": 41.6523, "lon": -4.7233},
+    # "Álava": {"lat": 42.8506, "lon": -2.6728},
     "Zamora": {"lat": 41.4991, "lon": -5.7549},
-    "Zaragoza": {"lat": 41.6565, "lon": -0.8793}
+    # "Zaragoza": {"lat": 41.6565, "lon": -0.8793}
 }
 
 lista_df = []
@@ -110,7 +103,9 @@ for provincia, coords in provincias.items():
 
 if lista_df:
     df_total = pd.concat(lista_df, ignore_index=True)
-    print(df_total.head())
-    df_total.to_csv("historico_provincias_espana.csv", index=False)
+    df = pd.read_csv('./Data/raw/open_meteo/historico_provincias_espana.csv')
+    df_act = pd.concat([df, df_total], ignore_index=True)
+    df_act.drop(columns=['time'])
+    df_act.to_csv("historico_provincias_espana.csv", index=False)
 else:
     print("No se obtuvieron datos de ninguna provincia.")
