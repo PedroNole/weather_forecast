@@ -47,8 +47,7 @@ La estructura principal del repositorio se basa en las siguientes carpetas y arc
     ├── EDA
     │   ├── eda_daily_almeria.ipynb
     │   ├── eda_daily_coruna.ipynb
-    │   ├── eda_daily_madrid.ipynb
-    │   └── .ipynb_checkpoints
+    │   └── eda_daily_madrid.ipynb
     ├── .gitignore
     ├── get_historical.py
     └── README.md
