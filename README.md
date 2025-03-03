@@ -93,3 +93,39 @@ Se recomienda crear y usar un entorno virtual para gestionar dependencias:
 ```
 
 *(En caso de que se disponga de un archivo **requirements.txt** con las dependencias.)*
+
+---
+
+## Instalación
+
+1. **Clonar el repositorio:**
+```bash
+    git clone https://github.com/escuuu/weather_forecast.git
+    cd nombre-del-repo
+```
+2. **Crear un entorno virtual *(opcional pero recomendado)*:**
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+3. **Instalar dependencias:**
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Uso
+
+1. **Descarga de datos:** Si se desea actualizar o descargar los datos desde la API de Aemet y Open Meteo, ejecutar:
+```bash
+python get_historical.py
+```
+
+2. **Preprocesado:** Dependiendo de la estrategia de limpieza y homogenización, existen scripts o notebooks que transforman los datos en crudos a datos procesados. Revisar la carpeta `Data/homogenized/` y `Data/transformed/` y los scripts asociados.
+3. **Análisis Exploratorio:** Abrir los notebooks de la carpeta EDA/ para revisar los análisis de cada región. Por ejemplo:
+```bash
+jupyter notebook EDA/eda_daily_madrid.ipynb
+```
+4. **Entrenamiento de Modelos:** En la carpeta `Algorithms/` se incluyen los algoritmos de predicción.
