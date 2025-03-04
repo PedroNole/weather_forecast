@@ -169,3 +169,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+Data/raw/madrid/clean_madrid_data.csv
