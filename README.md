@@ -139,6 +139,6 @@ python get_historical.py
 2. **Preprocesado:** Dependiendo de la estrategia de limpieza y homogenización, existen scripts o notebooks que transforman los datos en crudos a datos procesados. Revisar la carpeta `Data/homogenized/` y `Data/transformed/` y los scripts asociados.
 3. **Análisis Exploratorio:** Abrir los notebooks de la carpeta EDA/ para revisar los análisis de cada región. Por ejemplo:
 ```bash
-jupyter notebook EDA/eda_daily_madrid.ipynb
+jupyter notebook EDA/daily/eda_daily_madrid.ipynb
 ```
 4. **Entrenamiento de Modelos:** En la carpeta `Algorithms/` se incluyen los algoritmos de predicción.
