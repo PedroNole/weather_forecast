@@ -103,7 +103,7 @@ for provincia, coords in provincias.items():
 
 if lista_df:
     df_total = pd.concat(lista_df, ignore_index=True)
-    df = pd.read_csv('./Data/raw/open_meteo/historico_provincias_espana.csv')
+    df = pd.read_csv('./historico_provincias_espana.csv')
     df_act = pd.concat([df, df_total], ignore_index=True)
     df_act.drop(columns=['time'])
     df_act.to_csv("historico_provincias_espana.csv", index=False)

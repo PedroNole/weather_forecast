@@ -1,2 +1,0 @@
-Datos separados por tipo de variable a predecir. 
-Aquí realizaremos la transformación de los datos y el posterior guardado en particiones de fecha.
