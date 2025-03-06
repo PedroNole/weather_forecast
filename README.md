@@ -31,6 +31,8 @@ Este proyecto se centra en la construcción de modelos de predicción meteoroló
 La estructura principal del repositorio se basa en las siguientes carpetas y archivos:
 
 ```bash
+    Spain Weather Forecast
+    │
     ├── Algorithms
     │   └── intro.txt
     │
