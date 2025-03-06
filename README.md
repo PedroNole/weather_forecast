@@ -1,6 +1,6 @@
 # Spain Weather Forecast
 
-Este repositorio contiene un proyecto de series temporales para la predicción meteorológica en diferentes regiones de España. Se utilizan datos obtenidos desde la API de [Aemet](https://opendata.aemet.es/centrodedescargas/productosAEMET) y de [Open Meteo](https://open-meteo.com/), los cuales se almacenan en archivos CSV y se organizan en distintas carpetas.
+Este repositorio contiene un proyecto de series temporales para la predicción meteorológica en diferentes regiones de España. Se utilizan datos obtenidos desde la API de [Aemet](https://opendata.aemet.es/centrodedescargas/productosAEMET), de [Open Meteo](https://open-meteo.com/) y de [Comunidad de Madrid](https://datos.madrid.es/), los cuales se almacenan en archivos CSV y se organizan en distintas carpetas.
 
 ---
 
@@ -37,25 +37,40 @@ La estructura principal del repositorio se basa en las siguientes carpetas y arc
     ├── Data
     │   ├── homogenized
     │   │   ├── aemet
+    │   │   │   ├── tratamiento_datos_aemet.ipynb
+    │   │   │   └── tratamiento_datos_aemet_pyspark.ipynb
+    │   │   │       
+    │   │   ├── madrid
+    │   │   │
     │   │   └── open_meteo
+    │   │       └── tratamiento_datos_open_meteo.ipynb
     │   │   
     │   ├── raw
     │   │   ├── aemet
-    │   │   │   └── temp_historico.csv
+    │   │   │   └── temp_historico.csv  # Datos históricos diarios en España recogidos por Aemet. 
+    │   │   │
+    │   │   ├── madrid
+    │   │   │   └── madrid.csv # Datos históricos por horas de las estaciones de la Comunidad de Madrid.
     │   │   │
     │   │   └── open_meteo
-    │   │       └── historico_provincias_espana.csv
+    │   │       ├── historico_provincias_espana.csv # Datos históricos diarios en España recogidos por Open Meteo API.
+    │   │       └── get_historical.py
     │   │
     │   └── transformed
-    │       └── intro.txt
+    │       ├── transformed_aemet.csv
+    │       └── transformed_open_meteo.csv
     │
     ├── EDA
-    │   ├── eda_daily_almeria.ipynb
-    │   ├── eda_daily_coruna.ipynb
-    │   └── eda_daily_madrid.ipynb
+    │   ├── daily                       # EDA de tres regiones de España.
+    │   │   ├── eda_daily_almeria.ipynb
+    │   │   ├── eda_daily_coruna.ipynb
+    │   │   └── eda_daily_madrid.ipynb
+    │   │
+    │   └── hours
+    │       └── eda_hours_madrid.ipynb    
+    │   
     │
     ├── .gitignore
-    ├── get_historical.py
     ├── enviroment.yml
     └── README.md
 ```
@@ -64,40 +79,34 @@ A grandes rasgos:
 
 - **Algorithms/**: Contiene scripts o cuadernos con modelos de predicción y algoritmos de machine learning/deep learning.
 - **Data/**: 
-  - **raw/**: Datos originales sin procesar descargados de Aemet y Open Meteo.
-  - **homogenized/**: Datos procesados o limpiados para su uso en modelado.
-  - **transformed/**: Datos transformados, listos para ser usados en análisis o entrenamiento.
+  - **raw/**: Datos originales sin procesar descargados de Aemet, Open Meteo y Comunidad de Madrid.
+  - **homogenized/**: Carpeta orientada a la transformación de los datos.
+  - **transformed/**: Carpeta con los archivos de datos ya transformados y listos para usar.
 - **EDA/**: Cuadernos Jupyter para el análisis exploratorio de datos (EDA) específico de cada región.
-- **get_historical.py**: Script para descargar o actualizar los datos históricos.
 - **README.md**: Este archivo que describe el proyecto.
 
 ---
 
 ## Requisitos
 
-1. **Python 3.8+** (o la versión que se haya utilizado para el proyecto).
-2. **Bibliotecas** (ejemplo):
-   - `pandas`
-   - `numpy`
-   - `matplotlib`
-   - `seaborn`
-   - `scikit-learn`
-   - `statsmodels`
-   - `requests` (para la descarga de datos desde APIs)
-   - `jupyter` o `jupyterlab`
-   - Cualquier otra biblioteca específica (por ejemplo, `prophet`, `tensorflow`, etc.)
+1. **Python 3.11+**
+2. **Bibliotecas**:
+    - `python=3.11`
+    - `scikit-learn`
+    - `statsmodels`
+    - `requests` (para la descarga de datos desde APIs)
+    - `jupyter` o `jupyterlab`
+    - `pandas`
+    - `numpy`
+    - `scikit-learn`
+    - `pyspark`
+    - `plotly`
+    - `statsmodels`
+    - `pmdarima`
+    - Cualquier otra biblioteca específica (por ejemplo, `prophet`, `tensorflow`, etc.)
 3. **Conexión a Internet** para la descarga de datos (si se desea actualizar con `get_historical.py`).
 
-Se recomienda crear y usar un entorno virtual para gestionar dependencias:
-
-```bash
-    python -m venv venv
-    source venv/bin/activate  # En Linux/Mac
-    venv\Scripts\activate     # En Windows
-    pip install -r requirements.txt
-```
-
-*(En caso de que se disponga de un archivo **requirements.txt** con las dependencias.)*
+*(En caso de que se disponga de un archivo **enviroment.yml** con las dependencias.)*
 
 ---
 
@@ -115,7 +124,7 @@ conda activate weather_forecast
 ```
 3. **Instalar dependencias:**
 ```bash
-pip install -r requirements.txt
+pip install -r enviroment.yml
 ```
 
 ---
