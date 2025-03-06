@@ -33,23 +33,30 @@ La estructura principal del repositorio se basa en las siguientes carpetas y arc
 ```bash
     ├── Algorithms
     │   └── intro.txt
+    │
     ├── Data
     │   ├── homogenized
     │   │   ├── aemet
     │   │   └── open_meteo
+    │   │   
     │   ├── raw
     │   │   ├── aemet
     │   │   │   └── temp_historico.csv
+    │   │   │
     │   │   └── open_meteo
     │   │       └── historico_provincias_espana.csv
+    │   │
     │   └── transformed
     │       └── intro.txt
+    │
     ├── EDA
     │   ├── eda_daily_almeria.ipynb
     │   ├── eda_daily_coruna.ipynb
     │   └── eda_daily_madrid.ipynb
+    │
     ├── .gitignore
     ├── get_historical.py
+    ├── enviroment.yml
     └── README.md
 ```
 
@@ -63,7 +70,6 @@ A grandes rasgos:
 - **EDA/**: Cuadernos Jupyter para el análisis exploratorio de datos (EDA) específico de cada región.
 - **get_historical.py**: Script para descargar o actualizar los datos históricos.
 - **README.md**: Este archivo que describe el proyecto.
-
 
 ---
 
@@ -104,9 +110,8 @@ Se recomienda crear y usar un entorno virtual para gestionar dependencias:
 ```
 2. **Crear un entorno virtual *(opcional pero recomendado)*:**
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+conda env create -f enviroment.yml
+conda activate weather_forecast
 ```
 3. **Instalar dependencias:**
 ```bash
