@@ -77,7 +77,7 @@ La estructura principal del repositorio se basa en las siguientes carpetas y arc
 
 A grandes rasgos:
 
-- **Algorithms/**: Contiene scripts o cuadernos con modelos de predicción y algoritmos de machine learning/deep learning.
+- **Algorithms/**: Contiene scripts o cuadernos con modelos de predicción y algoritmos de machine learning.
 - **Data/**: 
   - **raw/**: Datos originales sin procesar descargados de Aemet, Open Meteo y Comunidad de Madrid.
   - **homogenized/**: Carpeta orientada a la transformación de los datos.
