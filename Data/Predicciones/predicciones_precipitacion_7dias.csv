@@ -1,0 +1,365 @@
+provincia,day,prediccion_precip,predicted_date
+A Coruña,1,1,2025-02-25
+A Coruña,2,1,2025-02-26
+A Coruña,3,0,2025-02-27
+A Coruña,4,1,2025-02-28
+A Coruña,5,1,2025-03-01
+A Coruña,6,1,2025-03-02
+A Coruña,7,0,2025-03-03
+Albacete,1,1,2025-02-25
+Albacete,2,0,2025-02-26
+Albacete,3,0,2025-02-27
+Albacete,4,0,2025-02-28
+Albacete,5,0,2025-03-01
+Albacete,6,0,2025-03-02
+Albacete,7,1,2025-03-03
+Alicante,1,0,2025-02-25
+Alicante,2,0,2025-02-26
+Alicante,3,0,2025-02-27
+Alicante,4,0,2025-02-28
+Alicante,5,0,2025-03-01
+Alicante,6,1,2025-03-02
+Alicante,7,1,2025-03-03
+Almería,1,0,2025-02-25
+Almería,2,0,2025-02-26
+Almería,3,0,2025-02-27
+Almería,4,0,2025-02-28
+Almería,5,1,2025-03-01
+Almería,6,1,2025-03-02
+Almería,7,1,2025-03-03
+Asturias,1,1,2025-02-25
+Asturias,2,1,2025-02-26
+Asturias,3,1,2025-02-27
+Asturias,4,0,2025-02-28
+Asturias,5,1,2025-03-01
+Asturias,6,1,2025-03-02
+Asturias,7,1,2025-03-03
+Badajoz,1,1,2025-02-25
+Badajoz,2,1,2025-02-26
+Badajoz,3,0,2025-02-27
+Badajoz,4,0,2025-02-28
+Badajoz,5,0,2025-03-01
+Badajoz,6,0,2025-03-02
+Badajoz,7,1,2025-03-03
+Baleares,1,0,2025-02-25
+Baleares,2,0,2025-02-26
+Baleares,3,1,2025-02-27
+Baleares,4,1,2025-02-28
+Baleares,5,0,2025-03-01
+Baleares,6,1,2025-03-02
+Baleares,7,1,2025-03-03
+Barcelona,1,0,2025-02-25
+Barcelona,2,0,2025-02-26
+Barcelona,3,1,2025-02-27
+Barcelona,4,0,2025-02-28
+Barcelona,5,1,2025-03-01
+Barcelona,6,1,2025-03-02
+Barcelona,7,1,2025-03-03
+Burgos,1,1,2025-02-25
+Burgos,2,1,2025-02-26
+Burgos,3,1,2025-02-27
+Burgos,4,1,2025-02-28
+Burgos,5,1,2025-03-01
+Burgos,6,0,2025-03-02
+Burgos,7,1,2025-03-03
+Cantabria,1,1,2025-02-26
+Cantabria,2,1,2025-02-27
+Cantabria,3,1,2025-02-28
+Cantabria,4,1,2025-03-01
+Cantabria,5,0,2025-03-02
+Cantabria,6,0,2025-03-03
+Cantabria,7,0,2025-03-04
+Castellón,1,1,2025-02-25
+Castellón,2,1,2025-02-26
+Castellón,3,1,2025-02-27
+Castellón,4,0,2025-02-28
+Castellón,5,1,2025-03-01
+Castellón,6,0,2025-03-02
+Castellón,7,1,2025-03-03
+Ceuta,1,0,2025-02-26
+Ceuta,2,0,2025-02-27
+Ceuta,3,0,2025-02-28
+Ceuta,4,0,2025-03-01
+Ceuta,5,0,2025-03-02
+Ceuta,6,0,2025-03-03
+Ceuta,7,0,2025-03-04
+Ciudad Real,1,1,2025-02-25
+Ciudad Real,2,1,2025-02-26
+Ciudad Real,3,0,2025-02-27
+Ciudad Real,4,0,2025-02-28
+Ciudad Real,5,0,2025-03-01
+Ciudad Real,6,0,2025-03-02
+Ciudad Real,7,1,2025-03-03
+Cuenca,1,0,2025-02-26
+Cuenca,2,0,2025-02-27
+Cuenca,3,0,2025-02-28
+Cuenca,4,0,2025-03-01
+Cuenca,5,0,2025-03-02
+Cuenca,6,0,2025-03-03
+Cuenca,7,0,2025-03-04
+Cáceres,1,1,2025-02-25
+Cáceres,2,0,2025-02-26
+Cáceres,3,0,2025-02-27
+Cáceres,4,1,2025-02-28
+Cáceres,5,1,2025-03-01
+Cáceres,6,0,2025-03-02
+Cáceres,7,1,2025-03-03
+Cádiz,1,0,2025-02-25
+Cádiz,2,1,2025-02-26
+Cádiz,3,0,2025-02-27
+Cádiz,4,0,2025-02-28
+Cádiz,5,1,2025-03-01
+Cádiz,6,0,2025-03-02
+Cádiz,7,0,2025-03-03
+Córdoba,1,1,2025-02-25
+Córdoba,2,0,2025-02-26
+Córdoba,3,0,2025-02-27
+Córdoba,4,0,2025-02-28
+Córdoba,5,0,2025-03-01
+Córdoba,6,1,2025-03-02
+Córdoba,7,1,2025-03-03
+Gipuzkoa,1,0,2025-02-26
+Gipuzkoa,2,0,2025-02-27
+Gipuzkoa,3,1,2025-02-28
+Gipuzkoa,4,0,2025-03-01
+Gipuzkoa,5,1,2025-03-02
+Gipuzkoa,6,0,2025-03-03
+Gipuzkoa,7,1,2025-03-04
+Girona,1,1,2025-02-25
+Girona,2,1,2025-02-26
+Girona,3,0,2025-02-27
+Girona,4,0,2025-02-28
+Girona,5,0,2025-03-01
+Girona,6,0,2025-03-02
+Girona,7,0,2025-03-03
+Granada,1,0,2025-02-25
+Granada,2,0,2025-02-26
+Granada,3,0,2025-02-27
+Granada,4,0,2025-02-28
+Granada,5,0,2025-03-01
+Granada,6,0,2025-03-02
+Granada,7,1,2025-03-03
+Guadalajara,1,0,2025-02-26
+Guadalajara,2,0,2025-02-27
+Guadalajara,3,0,2025-02-28
+Guadalajara,4,1,2025-03-01
+Guadalajara,5,1,2025-03-02
+Guadalajara,6,1,2025-03-03
+Guadalajara,7,1,2025-03-04
+Huelva,1,1,2025-02-25
+Huelva,2,1,2025-02-26
+Huelva,3,0,2025-02-27
+Huelva,4,0,2025-02-28
+Huelva,5,0,2025-03-01
+Huelva,6,0,2025-03-02
+Huelva,7,0,2025-03-03
+Huesca,1,1,2025-02-25
+Huesca,2,1,2025-02-26
+Huesca,3,0,2025-02-27
+Huesca,4,0,2025-02-28
+Huesca,5,1,2025-03-01
+Huesca,6,1,2025-03-02
+Huesca,7,1,2025-03-03
+Jaén,1,1,2025-02-25
+Jaén,2,0,2025-02-26
+Jaén,3,0,2025-02-27
+Jaén,4,0,2025-02-28
+Jaén,5,1,2025-03-01
+Jaén,6,1,2025-03-02
+Jaén,7,1,2025-03-03
+La Rioja,1,1,2025-02-25
+La Rioja,2,1,2025-02-26
+La Rioja,3,1,2025-02-27
+La Rioja,4,1,2025-02-28
+La Rioja,5,1,2025-03-01
+La Rioja,6,1,2025-03-02
+La Rioja,7,0,2025-03-03
+Las Palmas,1,0,2025-02-25
+Las Palmas,2,0,2025-02-26
+Las Palmas,3,0,2025-02-27
+Las Palmas,4,0,2025-02-28
+Las Palmas,5,0,2025-03-01
+Las Palmas,6,1,2025-03-02
+Las Palmas,7,0,2025-03-03
+León,1,1,2025-02-25
+León,2,1,2025-02-26
+León,3,1,2025-02-27
+León,4,0,2025-02-28
+León,5,1,2025-03-01
+León,6,1,2025-03-02
+León,7,1,2025-03-03
+Lleida,1,0,2025-02-25
+Lleida,2,0,2025-02-26
+Lleida,3,0,2025-02-27
+Lleida,4,0,2025-02-28
+Lleida,5,1,2025-03-01
+Lleida,6,1,2025-03-02
+Lleida,7,0,2025-03-03
+Lugo,1,1,2025-02-25
+Lugo,2,1,2025-02-26
+Lugo,3,0,2025-02-27
+Lugo,4,0,2025-02-28
+Lugo,5,1,2025-03-01
+Lugo,6,1,2025-03-02
+Lugo,7,1,2025-03-03
+Madrid,1,1,2025-02-25
+Madrid,2,1,2025-02-26
+Madrid,3,0,2025-02-27
+Madrid,4,0,2025-02-28
+Madrid,5,0,2025-03-01
+Madrid,6,0,2025-03-02
+Madrid,7,1,2025-03-03
+Melilla,1,1,2025-02-25
+Melilla,2,1,2025-02-26
+Melilla,3,0,2025-02-27
+Melilla,4,0,2025-02-28
+Melilla,5,0,2025-03-01
+Melilla,6,0,2025-03-02
+Melilla,7,1,2025-03-03
+Murcia,1,0,2025-02-25
+Murcia,2,0,2025-02-26
+Murcia,3,0,2025-02-27
+Murcia,4,0,2025-02-28
+Murcia,5,0,2025-03-01
+Murcia,6,1,2025-03-02
+Murcia,7,1,2025-03-03
+Málaga,1,1,2025-02-25
+Málaga,2,1,2025-02-26
+Málaga,3,0,2025-02-27
+Málaga,4,0,2025-02-28
+Málaga,5,0,2025-03-01
+Málaga,6,1,2025-03-02
+Málaga,7,1,2025-03-03
+Navarra,1,0,2025-02-26
+Navarra,2,0,2025-02-27
+Navarra,3,1,2025-02-28
+Navarra,4,0,2025-03-01
+Navarra,5,1,2025-03-02
+Navarra,6,1,2025-03-03
+Navarra,7,1,2025-03-04
+Ourense,1,1,2025-02-25
+Ourense,2,1,2025-02-26
+Ourense,3,1,2025-02-27
+Ourense,4,1,2025-02-28
+Ourense,5,1,2025-03-01
+Ourense,6,1,2025-03-02
+Ourense,7,1,2025-03-03
+Palencia,1,1,2025-02-25
+Palencia,2,1,2025-02-26
+Palencia,3,1,2025-02-27
+Palencia,4,1,2025-02-28
+Palencia,5,0,2025-03-01
+Palencia,6,0,2025-03-02
+Palencia,7,1,2025-03-03
+Pontevedra,1,1,2025-02-26
+Pontevedra,2,1,2025-02-27
+Pontevedra,3,1,2025-02-28
+Pontevedra,4,1,2025-03-01
+Pontevedra,5,1,2025-03-02
+Pontevedra,6,1,2025-03-03
+Pontevedra,7,1,2025-03-04
+Salamanca,1,0,2025-02-26
+Salamanca,2,0,2025-02-27
+Salamanca,3,0,2025-02-28
+Salamanca,4,0,2025-03-01
+Salamanca,5,0,2025-03-02
+Salamanca,6,1,2025-03-03
+Salamanca,7,0,2025-03-04
+Santa Cruz de Tenerife,1,1,2025-02-26
+Santa Cruz de Tenerife,2,1,2025-02-27
+Santa Cruz de Tenerife,3,1,2025-02-28
+Santa Cruz de Tenerife,4,0,2025-03-01
+Santa Cruz de Tenerife,5,0,2025-03-02
+Santa Cruz de Tenerife,6,1,2025-03-03
+Santa Cruz de Tenerife,7,1,2025-03-04
+Segovia,1,0,2025-02-26
+Segovia,2,1,2025-02-27
+Segovia,3,1,2025-02-28
+Segovia,4,1,2025-03-01
+Segovia,5,0,2025-03-02
+Segovia,6,1,2025-03-03
+Segovia,7,1,2025-03-04
+Sevilla,1,0,2025-02-26
+Sevilla,2,0,2025-02-27
+Sevilla,3,0,2025-02-28
+Sevilla,4,0,2025-03-01
+Sevilla,5,0,2025-03-02
+Sevilla,6,0,2025-03-03
+Sevilla,7,0,2025-03-04
+Soria,1,0,2025-02-26
+Soria,2,0,2025-02-27
+Soria,3,1,2025-02-28
+Soria,4,0,2025-03-01
+Soria,5,1,2025-03-02
+Soria,6,1,2025-03-03
+Soria,7,1,2025-03-04
+Tarragona,1,0,2025-02-26
+Tarragona,2,1,2025-02-27
+Tarragona,3,0,2025-02-28
+Tarragona,4,0,2025-03-01
+Tarragona,5,0,2025-03-02
+Tarragona,6,0,2025-03-03
+Tarragona,7,1,2025-03-04
+Teruel,1,0,2025-02-26
+Teruel,2,0,2025-02-27
+Teruel,3,0,2025-02-28
+Teruel,4,0,2025-03-01
+Teruel,5,0,2025-03-02
+Teruel,6,1,2025-03-03
+Teruel,7,0,2025-03-04
+Toledo,1,0,2025-02-26
+Toledo,2,1,2025-02-27
+Toledo,3,1,2025-02-28
+Toledo,4,1,2025-03-01
+Toledo,5,0,2025-03-02
+Toledo,6,0,2025-03-03
+Toledo,7,1,2025-03-04
+Valencia,1,0,2025-02-26
+Valencia,2,0,2025-02-27
+Valencia,3,0,2025-02-28
+Valencia,4,0,2025-03-01
+Valencia,5,0,2025-03-02
+Valencia,6,0,2025-03-03
+Valencia,7,0,2025-03-04
+Valladolid,1,0,2025-02-26
+Valladolid,2,1,2025-02-27
+Valladolid,3,0,2025-02-28
+Valladolid,4,0,2025-03-01
+Valladolid,5,1,2025-03-02
+Valladolid,6,1,2025-03-03
+Valladolid,7,1,2025-03-04
+Vizcaya,1,1,2025-02-25
+Vizcaya,2,1,2025-02-26
+Vizcaya,3,1,2025-02-27
+Vizcaya,4,1,2025-02-28
+Vizcaya,5,1,2025-03-01
+Vizcaya,6,1,2025-03-02
+Vizcaya,7,1,2025-03-03
+Zamora,1,0,2025-02-26
+Zamora,2,0,2025-02-27
+Zamora,3,1,2025-02-28
+Zamora,4,1,2025-03-01
+Zamora,5,1,2025-03-02
+Zamora,6,1,2025-03-03
+Zamora,7,0,2025-03-04
+Zaragoza,1,0,2025-02-26
+Zaragoza,2,0,2025-02-27
+Zaragoza,3,1,2025-02-28
+Zaragoza,4,1,2025-03-01
+Zaragoza,5,0,2025-03-02
+Zaragoza,6,0,2025-03-03
+Zaragoza,7,0,2025-03-04
+Álava,1,0,2025-02-26
+Álava,2,0,2025-02-27
+Álava,3,1,2025-02-28
+Álava,4,1,2025-03-01
+Álava,5,0,2025-03-02
+Álava,6,0,2025-03-03
+Álava,7,1,2025-03-04
+Ávila,1,1,2025-02-25
+Ávila,2,1,2025-02-26
+Ávila,3,1,2025-02-27
+Ávila,4,0,2025-02-28
+Ávila,5,0,2025-03-01
+Ávila,6,0,2025-03-02
+Ávila,7,1,2025-03-03
