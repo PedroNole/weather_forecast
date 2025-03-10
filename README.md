@@ -144,3 +144,28 @@ python get_historical.py
 jupyter notebook EDA/daily/eda_daily_madrid.ipynb
 ```
 4. **Entrenamiento de Modelos:** En la carpeta `Algorithms/` se incluyen los algoritmos de predicción.
+
+---
+
+## Análisis Exploratorio (EDA)
+
+En la carpeta `EDA/` se encuentran los cuadernos Jupyter con estudios exploratorios por zonas:
+
+- `eda_daily_almeria.ipynb`
+- `eda_daily_coruna.ipynb`
+- `eda_daily_madrid.ipynb`
+
+Cada cuaderno contiene:
+
+- Visualizaciones de variables (temperatura, precipitación, etc.).
+- Detección y manejo de valores atípicos.
+- Análisis de correlaciones.
+
+---
+
+## Algoritmos y Modelos
+
+En la carpeta `Algorithms/` se detallan diferentes aproximaciones de modelado:
+
+- Modelos clásicos de series temporales: *Sarimax*.
+- Modelos de machine learning: *RandomForestRegressor*.
