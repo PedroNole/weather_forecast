@@ -62,6 +62,12 @@ La estructura principal del repositorio se basa en las siguientes carpetas y arc
     │       ├── transformed_aemet.csv
     │       └── transformed_open_meteo.csv
     │
+    ├── Models
+    │   ├── Sarimax
+    │   │   └── predicciones.pkl ...
+    │   │
+    │   └── ...
+    │
     ├── EDA
     │   ├── daily                       # EDA de tres regiones de España.
     │   │   ├── eda_daily_almeria.ipynb
